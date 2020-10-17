@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Круизы в Антарктику</title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+    <script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <a class="page-header__logo-link"><svg class="page-header__logo-image" width="70" height="38"><use xlink:href="#icon-logo"></use></svg></a>
+      <nav class="page-header__nav nav">
+        <ul class="nav__list reset-list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Преимущества</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Направления</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Ближайшие круизы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <div class="page-main__wrapper-main-title-and-image">
+        <div class="page-main__main-title-and-text">
+          <h1 class="page-main__main-title">Круизы в Антарктику</h1>
+          <p class="page-main__text">Волшебный мир айсбергов и пингвинов</p>
+        </div>
+        <picture class="page-main__picture">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/main-image-mobile@1x.webp 1x, img/main-image-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-image-tablet@1x.webp 1x, img/main-image-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-image-desktop@1x.webp 1x, img/main-image-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/main-image-mobile@1x.jpg 1x, img/main-image-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/main-image-tablet@1x.jpg 1x, img/main-image-tablet@2x.jpg 2x">
+          <img src="img/main-image-desktop@1x.jpg" srcset="img/main-image-desktop@2x.jpg 2x" width="1366" height="650" alt="Снежное горное побережье">
+        </picture>
+      </div>
+
+    </main>
+
+
+
+  </body>
 </html>

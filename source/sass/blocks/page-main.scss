@@ -1,0 +1,29 @@
+
+.page-main {
+  margin: 0 auto;
+
+  max-width: $max-width;
+}
+
+.page-main__wrapper-main-title-and-image {
+  position: relative;
+  margin: 0 auto;
+}
+
+.page-main__main-title-and-text {
+  position: absolute;
+}
+
+.page-main__main-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #F9FBFD;
+}
+
+.page-main__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F9FBFD;
+}
