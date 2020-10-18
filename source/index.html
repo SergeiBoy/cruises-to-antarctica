@@ -27,20 +27,21 @@
     </div>
 
     <header class="page-header">
-      <a class="page-header__logo-link"><svg class="page-header__logo-image" width="70" height="38"><use xlink:href="#icon-logo"></use></svg></a>
+      <a><svg class="page-header__logo-image" width="70" height="38"><use xlink:href="#icon-logo"></use></svg></a>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
       <nav class="page-header__nav nav">
-        <ul class="nav__list reset-list">
+        <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Преимущества</a>
+            <a class="nav__link nav__link--main-menu" href="#">Преимущества</a>
+          </li>
+          <li class="nav__item nav__item--order-change">
+            <a class="nav__link nav__link--main-menu" href="#">Направления</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Направления</a>
+            <a class="nav__link nav__link--main-menu" href="#">Ближайшие круизы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Ближайшие круизы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
+            <a class="nav__link nav__link--main-menu" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -50,22 +51,45 @@
 
       <div class="page-main__wrapper-main-title-and-image">
         <div class="page-main__main-title-and-text">
-          <h1 class="page-main__main-title">Круизы в Антарктику</h1>
-          <p class="page-main__text">Волшебный мир айсбергов и пингвинов</p>
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
         </div>
-        <picture class="page-main__picture">
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/main-image-mobile@1x.webp 1x, img/main-image-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-image-tablet@1x.webp 1x, img/main-image-tablet@2x.webp 2x">
+        <picture>
           <source type="image/webp" srcset="img/main-image-desktop@1x.webp 1x, img/main-image-desktop@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/main-image-mobile@1x.jpg 1x, img/main-image-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/main-image-tablet@1x.jpg 1x, img/main-image-tablet@2x.jpg 2x">
+          <!-- 1х: 1366px; 2x: 2732px -->
           <img src="img/main-image-desktop@1x.jpg" srcset="img/main-image-desktop@2x.jpg 2x" width="1366" height="650" alt="Снежное горное побережье">
         </picture>
       </div>
 
     </main>
 
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a><svg class="page-footer__logo-image" width="70" height="38"><use xlink:href="#icon-logo"></use></svg></a>
+        <nav class="page-footer__nav nav">
+          <ul class="nav__list nav__list--footer">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--footer" href="#">Преимущества</a>
+            </li>
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--footer" href="#">Направления</a>
+            </li>
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--footer" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--footer" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-footer__social social">
+        <a class="social__link" href="#"><svg class="social__image social__image--facebook" width="11" height="20"><use xlink:href="#icon-facebook"></use></svg></a>
+        <a class="social__link" href="#"><svg class="social__image social__image--instagram" width="20" height="20"><use xlink:href="#icon-instagram"></use></svg></a>
+        <a class="social__link" href="#"><svg class="social__image social__image--twitter" width="20" height="16"><use xlink:href="#icon-twitter"></use></svg></a>
+      </div>
+    </footer>
 
-
+    <script src="js/menu.js"></script>
   </body>
 </html>
