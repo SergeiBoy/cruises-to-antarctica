@@ -5,7 +5,7 @@
   width: 100%;
   max-width: $max-width;
   min-width: $min-width;
-  flex-grow: 1;
+  flex: 1 0 auto;
 }
 
 .page-main__wrapper-main-title-and-image {
@@ -50,6 +50,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .page-main__wrapper-main-title-and-image {
+    height: 638px;
+  }
+
   .page-main__main-title-and-text {
     left: 46px;
   }
@@ -70,6 +74,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .page-main__wrapper-main-title-and-image {
+    height: 500px;
+  }
+
   .page-main__main-title-and-text {
     top: 153px;
     left: 18px;
