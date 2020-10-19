@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  &--footer{
+  &--footer {
     margin-left: 8px;
   }
 }
@@ -21,17 +21,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 
   &:hover,
   &:focus {
-    color: darken(#F9FBFD, 30%);
+    color: darken(#f9fbfd, 30%);
   }
 }
 
 @media (max-width: $tablet-width) {
   .nav__list {
-    &--footer{
+    &--footer {
       margin-left: 0;
     }
   }
@@ -82,12 +82,12 @@
     &--main-menu {
       font-size: 18px;
       line-height: 22px;
-      color: #011C40;
+      color: #011c40;
     }
 
     &--main-menu:hover,
     &--main-menu:focus {
-      color: lighten(#011C40, 30%);
+      color: lighten(#011c40, 30%);
     }
   }
 }

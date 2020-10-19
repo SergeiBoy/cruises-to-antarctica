@@ -14,7 +14,7 @@
 }
 
 .page-header__logo-image {
-  fill: #F9FBFD;
+  fill: #f9fbfd;
 }
 
 .page-header__toggle {
@@ -61,11 +61,11 @@
     width: 42px;
     height: 22px;
 
-    fill: #011C40;
+    fill: #011c40;
   }
 
   .page-header--menu-closed .page-header__logo-image {
-    fill: #F9FBFD;
+    fill: #f9fbfd;
   }
 
   .page-header--menu-opened .page-header__toggle {
@@ -82,7 +82,7 @@
       width: 18px;
       height: 2px;
 
-      background-color: #011C40;
+      background-color: #011c40;
     }
 
     &::before {
@@ -108,8 +108,8 @@
       width: 25px;
       height: 2px;
 
-      background-color: #F9FBFD;
-      box-shadow: 0 6px 0 0 #F9FBFD, 0 12px 0 0 #F9FBFD;
+      background-color: #f9fbfd;
+      box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
     }
   }
 
