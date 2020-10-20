@@ -38,10 +38,14 @@
   overflow: hidden;
 }
 
+.travel img {
+  display: block;
+}
+
 @media (max-width: $tablet-width) {
   .travel {
     align-items: flex-start;
-    padding: 100px 45px;
+    padding: 100px 45px 80px 45px;
   }
 
   .travel__image-wrapper {
