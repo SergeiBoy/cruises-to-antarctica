@@ -1,6 +1,6 @@
 
 .upcoming-cruises {
-  padding: 88px 118px 120px 118px;
+  padding: 88px 25px 120px 55px;
 }
 
 .upcoming-cruises__list {
@@ -8,12 +8,16 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .upcoming-cruises__item {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  width: 260px;
+  height: 386px;
 }
 
 .upcoming-cruises__text-info {
@@ -36,6 +40,9 @@
 }
 
 .upcoming-cruises h2 {
+  margin-right: 30px;
+  margin-bottom: 48px;
+
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -102,4 +109,75 @@
 
 .upcoming-cruises img {
   display: block;
+}
+
+@media (max-width: $tablet-width) {
+  .upcoming-cruises {
+    padding-top: 68px;
+  }
+
+  .upcoming-cruises__item {
+    width: 309px;
+  }
+
+  .upcoming-cruises h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .upcoming-cruises__text-info {
+    padding-left: 35px;
+  }
+
+  .upcoming-cruises__wrapper-image h3 {
+    left: 35px;
+    bottom: 13px;
+  }
+
+  .upcoming-cruises a {
+    width: 239px;
+  }
+
+  .upcoming-cruises img {
+    width: 309px;
+    height: 386px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .upcoming-cruises {
+    padding: 38px 0 120px 20px;
+  }
+
+  .upcoming-cruises h2 {
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .upcoming-cruises__item {
+    margin-right: 20px;
+
+    width: 270px;
+  }
+
+  .upcoming-cruises__text-info {
+    padding-left: 25px;
+  }
+
+  .upcoming-cruises__wrapper-image h3 {
+    left: 25px;
+    bottom: 3px;
+  }
+
+  .upcoming-cruises a {
+    width: 220px;
+  }
+
+  .upcoming-cruises img {
+    width: 270px;
+    height: 386px;
+  }
 }
