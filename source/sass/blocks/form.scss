@@ -1,0 +1,25 @@
+
+.form {
+  width: 403px;
+  min-height: 455px;
+  box-sizing: border-box;
+  padding: 50px;
+  flex-shrink: 0;
+
+  background: #011c40;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+}
+
+.form p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.form__checkbox-agreement label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+}

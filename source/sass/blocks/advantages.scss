@@ -2,7 +2,7 @@
 .advantages {
   padding: 88px 63px 80px 103px;
 
-  background-image: url(../img/advantages-background.png);
+  background-image: url("../img/advantages-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -129,7 +129,6 @@
   .advantages__list {
     flex-direction: column;
     align-items: center;
-
   }
 
   .advantages__item {
