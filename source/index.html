@@ -302,7 +302,7 @@
             <input id="user-email" type="email" placeholder="grishaewa.lera@gmail.com">
           </div>
           <div class="form__checkbox-agreement">
-            <input id="user-agreement" type="checkbox" checked><label for="user-agreement">Я согласен на обработку моих персональных данных</label>
+            <input id="user-agreement" type="checkbox" checked><label for="user-agreement">Я согласен на обработку <br class="form__line-end">моих персональных данных</label>
           </div>
           <div class="form__submit-button">
             <button type="submit">Оставить заявку</button>
@@ -310,8 +310,21 @@
         </form>
       </section>
 
-      <section>
-        Контакты
+      <section class="page-main__contacts contacts">
+        <div class="contacts__text">
+          <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+          <div class="contacts__address">
+            <svg class="contacts__map-pointer" width="18" height="22"><use xlink:href="#icon-map-pointer"></use></svg>
+            <p>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+          </div>
+          <div class="contacts__tel">
+            <svg class="contacts__tel" width="18" height="18"><use xlink:href="#icon-tel"></use></svg>
+            <a href="tel:+78002000000">8-800-200-00-00</a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map.png" width="560" height="306" alt="Карта">
+        </div>
       </section>
 
     </main>

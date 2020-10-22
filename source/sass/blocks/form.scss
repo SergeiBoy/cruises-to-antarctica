@@ -1,5 +1,6 @@
 
 .form {
+  width: 100%;
   max-width: 403px;
   min-height: 455px;
   box-sizing: border-box;
@@ -46,6 +47,7 @@
   margin-right: 5px;
   margin-bottom: 30px;
 
+  flex-shrink: 0;
   width: 18px;
   height: 18px;
 }
@@ -91,7 +93,11 @@
   }
 
   .form__checkbox-agreement input {
-    margin-right: 15px;
+    margin-right: 13px;
+    margin-bottom: 28px;
+
+    width: 20px;
+    height: 20px;
   }
 
   .form__checkbox-agreement label {
