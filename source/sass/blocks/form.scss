@@ -1,9 +1,9 @@
 
 .form {
-  width: 403px;
+  max-width: 403px;
   min-height: 455px;
   box-sizing: border-box;
-  padding: 50px;
+  padding: 28px 50px 20px 50px;
   flex-shrink: 0;
 
   background: #011c40;
@@ -11,15 +11,94 @@
 }
 
 .form p {
+  margin-bottom: 26px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
 }
 
+.form input {
+  margin-bottom: 20px;
+
+  width: 100%;
+  height: 43px;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 16px;
+
+  border: 0;
+  background-color: #f9fbfd;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #011c40;
+  }
+}
+
+.form__checkbox-agreement {
+  display: flex;
+}
+
+.form__checkbox-agreement input {
+  margin-right: 5px;
+  margin-bottom: 30px;
+
+  width: 18px;
+  height: 18px;
+}
+
 .form__checkbox-agreement label {
   font-weight: 400;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 22px;
   color: #f9fbfd;
+}
+
+.form__submit-button button {
+  width: 100%;
+  min-height: 43px;
+  padding: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+
+  border: 0;
+  background-color: #f9fbfd;
+
+  &:hover,
+  &:focus {
+    color: darken(#f9fbfd, 30%);
+  }
+}
+
+.form__line-end {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    min-height: 460px;
+    padding: 14px 30px 20px 30px;
+  }
+
+  .form p {
+    text-align: center;
+  }
+
+  .form__checkbox-agreement input {
+    margin-right: 15px;
+  }
+
+  .form__checkbox-agreement label {
+    line-height: 12px;
+  }
+
+  .form__line-end {
+    display: block;
+  }
 }

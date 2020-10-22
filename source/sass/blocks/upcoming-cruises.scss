@@ -114,6 +114,7 @@
 @media (max-width: $tablet-width) {
   .upcoming-cruises {
     padding-top: 68px;
+    padding-bottom: 70px;
   }
 
   .upcoming-cruises__item {
@@ -146,7 +147,7 @@
 
 @media (max-width: $mobile-width) {
   .upcoming-cruises {
-    padding: 38px 0 120px 20px;
+    padding: 38px 0 35px 20px;
   }
 
   .upcoming-cruises h2 {
