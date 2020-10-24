@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.page-main__main-title-and-text {
+.page-main__main-content-wrapper {
   position: absolute;
   top: 234px;
   left: 198px;
@@ -23,7 +23,7 @@
   padding-right: 20px;
 }
 
-.page-main__main-title-and-text h1 {
+.page-main__main-content-wrapper h1 {
   margin-bottom: 0;
 
   font-weight: 700;
@@ -32,7 +32,7 @@
   color: #f9fbfd;
 }
 
-.page-main__main-title-and-text p {
+.page-main__main-content-wrapper p {
   margin-top: 12px;
 
   font-weight: 400;
@@ -54,16 +54,16 @@
     height: 638px;
   }
 
-  .page-main__main-title-and-text {
+  .page-main__main-content-wrapper {
     left: 46px;
   }
 
-  .page-main__main-title-and-text h1 {
+  .page-main__main-content-wrapper h1 {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .page-main__main-title-and-text p {
+  .page-main__main-content-wrapper p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -78,17 +78,17 @@
     height: 500px;
   }
 
-  .page-main__main-title-and-text {
+  .page-main__main-content-wrapper {
     top: 153px;
     left: 18px;
   }
 
-  .page-main__main-title-and-text h1 {
+  .page-main__main-content-wrapper h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .page-main__main-title-and-text p {
+  .page-main__main-content-wrapper p {
     font-size: 16px;
   }
 

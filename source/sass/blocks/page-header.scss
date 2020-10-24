@@ -48,12 +48,13 @@
     flex-direction: column;
     padding: 20px 15px;
 
-    &--menu-closed {
+    &--menu-closed,
+    &--menu-opened {
       position: absolute;
     }
 
     &--menu-opened {
-      position: relative;
+      background-color: #f9fbfd;
     }
   }
 
