@@ -291,15 +291,15 @@
           <p>Оставьте заявку <br class="form__line-end">и мы свяжемся с вами в&nbsp;ближайшее время</p>
           <div class="form__name">
             <label class="visually-hidden" for="user-name">Имя</label>
-            <input id="user-name" type="text" placeholder="Валерия">
+            <input id="user-name" type="text" placeholder="Валерия" required="">
           </div>
           <div class="form__tel">
             <label class="visually-hidden" for="user-tel">Телефон</label>
-            <input id="user-tel" type="tel" placeholder="89236889975">
+            <input id="user-tel" type="tel" placeholder="89236889975" pattern="[+]{0,1}\d\s?[\(]{0,1}\d{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
           </div>
           <div class="form__email">
             <label class="visually-hidden" for="user-email">Email</label>
-            <input id="user-email" type="email" placeholder="grishaewa.lera@gmail.com">
+            <input id="user-email" type="email" placeholder="grishaewa.lera@gmail.com" required="">
           </div>
           <div class="form__checkbox-agreement">
             <input id="user-agreement" type="checkbox" checked=""><label for="user-agreement">Я согласен на обработку <br class="form__line-end">моих персональных данных</label>
@@ -356,6 +356,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/menu.js"></script>
+    <script src="js/phone-mask.js"></script>
   </body>
 </html>
