@@ -1,16 +1,15 @@
 
 .travel {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 120px 103px;
+  padding: 120px 90px;
 }
 
 .travel__text {
   width: 100%;
   max-width: 555px;
-  box-sizing: border-box;
-  padding-right: 30px;
+  margin-right: 3.8%;
 }
 
 .travel h2 {
@@ -80,8 +79,8 @@
   }
 
   .travel__text {
-    padding-right: 0;
-    padding-bottom: 19px;
+    margin-right: 0;
+    margin-bottom: 19px;
   }
 
   .travel h2 {

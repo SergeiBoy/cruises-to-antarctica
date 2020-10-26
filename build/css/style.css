@@ -488,8 +488,8 @@ a {
     margin-top: 42px;
     margin-bottom: 20px; }
     .nav__list--footer {
-      margin-top: 20px;
-      margin-bottom: 13px; }
+      margin-top: 22px;
+      margin-bottom: 6px; }
   .nav__item {
     margin-left: 0;
     margin-bottom: 21px; }
@@ -509,7 +509,6 @@ a {
 .page-main {
   margin: 0 auto;
   width: 100%;
-  max-width: 1366px;
   min-width: 320px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -522,7 +521,7 @@ a {
 .page-main__main-content-wrapper {
   position: absolute;
   top: 234px;
-  left: 198px;
+  left: 14.5%;
   z-index: 1;
   padding-right: 20px; }
 
@@ -545,7 +544,12 @@ a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   display: block;
+  width: 100%;
   max-width: none; }
+
+@media (max-width: 1366px) {
+  .page-main__wrapper-main-title-and-image img {
+    width: auto; } }
 
 @media (max-width: 1023px) {
   .page-main__wrapper-main-title-and-image {
@@ -581,20 +585,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 120px 103px; }
+  padding: 120px 90px; }
 
 .travel__text {
   width: 100%;
   max-width: 555px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 30px; }
+  margin-right: 3.8%; }
 
 .travel h2 {
   margin-top: 10px;
@@ -659,8 +661,8 @@ a {
             align-items: center;
     padding: 65px 15px; }
   .travel__text {
-    padding-right: 0;
-    padding-bottom: 19px; }
+    margin-right: 0;
+    margin-bottom: 19px; }
   .travel h2 {
     font-size: 24px;
     line-height: 34px; }
@@ -671,6 +673,16 @@ a {
     height: 186px; } }
 
 .advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 88px 63px 80px 103px;
   background-image: url("../img/advantages-background.png");
   background-repeat: no-repeat;
@@ -685,13 +697,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%; }
 
 .advantages__item {
   margin-right: 3.3%;
   margin-bottom: 3.3%;
   width: 30%;
-  max-width: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 25px 30px 10px 30px;
@@ -937,7 +950,7 @@ a {
   background-color: #b9f1ff;
   background-image: url("../img/booking-background@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .booking {
@@ -1030,6 +1043,7 @@ a {
 
 .form p {
   margin-bottom: 26px;
+  margin-right: -10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1110,6 +1124,7 @@ a {
     min-height: 460px;
     padding: 14px 30px 20px 30px; }
   .form p {
+    margin-right: 0;
     text-align: center; }
   .form__checkbox-agreement input {
     margin-right: 13px;
@@ -1238,25 +1253,30 @@ a {
     height: 316px; } }
 
 .page-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  background-color: #011c40; }
+
+.page-footer__wrapper {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: 1366px;
   min-width: 320px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 50px 70px 47px 103px;
-  background-color: #011c40; }
+  padding: 50px 70px 47px 103px; }
 
-.page-footer__wrapper {
+.page-footer__wrapper-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1264,26 +1284,29 @@ a {
 .page-footer__logo-image {
   fill: #f9fbfd; }
 
-@media (max-width: 1090px) {
-  .page-footer {
-    padding-left: 40px;
-    padding-right: 50px; } }
+@media (max-width: 1140px) {
+  .page-footer__wrapper {
+    padding-left: 45px;
+    padding-right: 30px; } }
 
 @media (max-width: 1023px) {
-  .page-footer {
+  .page-footer__wrapper {
     padding: 48px 22px 43px 45px; }
   .page-footer__logo-image {
     width: 38px;
     height: 20px; } }
 
 @media (max-width: 767px) {
-  .page-footer {
+  .page-footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 40px 15px 35px 15px; }
-  .page-footer__wrapper {
+  .page-footer__wrapper-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1293,7 +1316,20 @@ a {
     height: 22px; } }
 
 .social {
-  margin-left: 50px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  max-width: 250px; }
+
+.social__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1304,7 +1340,9 @@ a {
           align-items: center; }
 
 .social__link {
-  margin-right: 33px; }
+  margin-right: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
   .social__link:hover .social__image,
   .social__link:focus .social__image {
     fill: #86afd7; }
@@ -1313,7 +1351,11 @@ a {
   fill: #f9fbfd; }
 
 @media (max-width: 1023px) {
+  .social {
+    min-width: 130px;
+    max-width: 200px; }
   .social__link {
+    margin-top: 5px;
     margin-right: 23px; }
   .social__image--facebook {
     width: 9px;
@@ -1327,4 +1369,7 @@ a {
 
 @media (max-width: 767px) {
   .social {
-    margin-left: 0; } }
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }

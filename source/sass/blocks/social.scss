@@ -1,7 +1,15 @@
 
 .social {
-  margin-left: 50px;
+  margin-left: 30px;
 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.social__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,6 +17,8 @@
 
 .social__link {
   margin-right: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   &:hover .social__image,
   &:focus .social__image {
@@ -21,7 +31,13 @@
 }
 
 @media (max-width: $tablet-width) {
+  .social {
+    min-width: 130px;
+    max-width: 200px;
+  }
+
   .social__link {
+    margin-top: 5px;
     margin-right: 23px;
   }
 
@@ -46,5 +62,7 @@
 @media (max-width: $mobile-width) {
   .social {
     margin-left: 0;
+
+    justify-content: flex-start;
   }
 }
