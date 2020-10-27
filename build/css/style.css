@@ -1146,7 +1146,7 @@ a {
     padding-left: 28px; }
   .form__checkbox-agreement label {
     line-height: 12px; }
-    .form__checkbox-agreement label:before {
+    .form__checkbox-agreement label::before {
       width: 20px;
       height: 20px; }
   .form__checkbox-agreement input:checked + label::after {

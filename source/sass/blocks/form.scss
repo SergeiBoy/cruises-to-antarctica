@@ -133,7 +133,7 @@
   .form__checkbox-agreement label {
     line-height: 12px;
 
-    &:before {
+    &::before {
       width: 20px;
       height: 20px;
     }
