@@ -30,27 +30,25 @@
   padding: 5px 5px 5px 16px;
 
   border: 0;
+  border-radius: 0;
   background-color: #f9fbfd;
 
   &::placeholder {
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
     color: #011c40;
   }
 }
 
 .form__checkbox-agreement {
-  display: flex;
+  position: relative;
+  margin-bottom: 25px;
+
+  padding-left: 23px;
 }
 
 .form__checkbox-agreement input {
-  margin-right: 5px;
-  margin-bottom: 30px;
-
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
+  display: none;
 }
 
 .form__checkbox-agreement label {
@@ -58,6 +56,36 @@
   font-size: 10px;
   line-height: 22px;
   color: #f9fbfd;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #f9fbfd;
+  }
+}
+
+.form__checkbox-agreement input:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/form-daw.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form__submit-button button {
@@ -72,6 +100,8 @@
 
   border: 0;
   background-color: #f9fbfd;
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -95,16 +125,23 @@
     text-align: center;
   }
 
-  .form__checkbox-agreement input {
-    margin-right: 13px;
-    margin-bottom: 28px;
-
-    width: 20px;
-    height: 20px;
+  .form__checkbox-agreement {
+    display: flex;
+    padding-left: 28px;
   }
 
   .form__checkbox-agreement label {
     line-height: 12px;
+
+    &:before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .form__checkbox-agreement input:checked + label::after {
+    width: 20px;
+    height: 20px;
   }
 
   .form__line-end {

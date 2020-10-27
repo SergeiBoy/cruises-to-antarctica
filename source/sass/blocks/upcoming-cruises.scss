@@ -35,7 +35,8 @@
 }
 
 .upcoming-cruises__item:hover .upcoming-cruises__text-info,
-.upcoming-cruises__item:focus .upcoming-cruises__text-info, {
+.upcoming-cruises__item:focus .upcoming-cruises__text-info,
+.upcoming-cruises__item:focus-within .upcoming-cruises__text-info {
   z-index: 1;
 }
 
