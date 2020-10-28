@@ -24,7 +24,7 @@ gulp.task("main-scripts", function() {
 });
 
 gulp.task("vendor-scripts", function() {
-  return gulp.src(["source/js/svg4everybody.js", "source/js/imask.js"])
+  return gulp.src(["source/js/svg4everybody.js", "node_modules/imask/dist/imask.js"])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"));
 });
