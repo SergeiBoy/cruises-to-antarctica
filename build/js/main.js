@@ -18,7 +18,9 @@
 })();
 
 'use strict';
-
+/* global IMask */
+/* eslint no-undef: "error"*/
+/* eslint new-cap: ["error", { "capIsNewExceptions": ["IMask"] }]*/
 (function () {
   try {
     IMask(
