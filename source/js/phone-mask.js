@@ -6,7 +6,10 @@
   try {
     IMask(
         document.querySelector('.form__tel input'), {
-          mask: '00000000000'
+          mask: '[#]00000000000',
+          definitions: {
+            '#': /[+]/
+          }
         })();
   } catch (e) {
     if (e.name === 'TypeError') {

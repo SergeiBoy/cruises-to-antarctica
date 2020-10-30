@@ -801,6 +801,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +809,8 @@ a {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  max-width: 1200px; }
 
 .upcoming-cruises__item {
   position: relative;
