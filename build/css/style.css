@@ -1094,7 +1094,17 @@ a {
   padding-left: 23px; }
 
 .form__checkbox-agreement input {
-  display: none; }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .form__checkbox-agreement label {
   font-weight: 400;
@@ -1102,6 +1112,8 @@ a {
   line-height: 22px;
   color: #f9fbfd;
   cursor: pointer; }
+  .form__checkbox-agreement label:hover {
+    color: #86afd7; }
   .form__checkbox-agreement label::before {
     content: "";
     position: absolute;
@@ -1122,6 +1134,9 @@ a {
   background-repeat: no-repeat;
   background-position: center; }
 
+.form__checkbox-agreement input:focus + label {
+  color: #86afd7; }
+
 .form__submit-button button {
   width: 100%;
   min-height: 43px;
@@ -1134,7 +1149,7 @@ a {
   background-color: #f9fbfd;
   cursor: pointer; }
   .form__submit-button button:hover, .form__submit-button button:focus {
-    color: #86afd7; }
+    color: #035ed7; }
 
 .form__line-end {
   display: none; }
